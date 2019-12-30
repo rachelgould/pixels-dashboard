@@ -5,9 +5,11 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Layout from "../components/layout"
 // import Image from "../components/image"
-import SEO from "../components/seo"
+import SEO from "../components/seo";
 import 'typeface-roboto';
 import processRaw from '../utils/data';
+import Timeline from "../components/timelineChart";
+import SummaryStats from "../components/summaryStats";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -22,16 +24,22 @@ const useStyles = makeStyles(theme => ({
 
 
 const IndexPage = () => {
-  let data = processRaw();
-  console.log(data)
+  const { separatedDates, combinedDates } = processRaw();
   const classes = useStyles();
   return (
     <Layout>
       <SEO title="Home" />
         <div className={classes.root}>
         <Grid container spacing={3}>
-          <Grid item xs={12}>
-            <Paper className={classes.paper}>xs</Paper>
+          <Grid item xs={9}>
+            <Paper className={classes.paper}>
+              {combinedDates ? <Timeline data={combinedDates} /> : <p>Loading...</p>}
+            </Paper>
+          </Grid>
+          <Grid item xs={3}>
+            <Paper className={classes.paper}>
+              <SummaryStats data={separatedDates} />
+            </Paper>
           </Grid>
         </Grid>
         <Grid container spacing={3}>
