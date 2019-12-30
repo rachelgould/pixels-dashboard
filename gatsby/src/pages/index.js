@@ -10,6 +10,7 @@ import 'typeface-roboto';
 import processRaw from '../utils/data';
 import Timeline from "../components/timelineChart";
 import SummaryStats from "../components/summaryStats";
+import BarChart from "../components/barChart";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -42,16 +43,15 @@ const IndexPage = () => {
             </Paper>
           </Grid>
         </Grid>
-        <Grid container spacing={3}>
+        <Grid container spacing={6}>
           <Grid item xs>
-            <Paper className={classes.paper}>xs</Paper>
+            <Paper className={classes.paper}>
+              {separatedDates ? <BarChart data={separatedDates} /> : <p>Loading...</p>}
+            </Paper>
           </Grid>
-          <Grid item xs={6}>
-            <Paper className={classes.paper}>xs=6</Paper>
-          </Grid>
-          <Grid item xs>
-            <Paper className={classes.paper}>xs</Paper>
-          </Grid>
+          {/* <Grid item xs={6}>
+            <Paper className={classes.paper}></Paper>
+          </Grid> */}
         </Grid>
       </div>
     </Layout>
