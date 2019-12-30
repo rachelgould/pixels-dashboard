@@ -48,7 +48,7 @@ const Layout = ({ children }) => {
               <MenuIcon />
             </IconButton> */}
             <Typography variant="h6" color="inherit">
-              Your Pixels Dashboard
+              Your Pixels Mood Dashboard
             </Typography>
           </Toolbar>
         </AppBar>
