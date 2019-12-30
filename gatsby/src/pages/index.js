@@ -7,6 +7,7 @@ import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
 import 'typeface-roboto';
+import processRaw from '../utils/data';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -21,6 +22,8 @@ const useStyles = makeStyles(theme => ({
 
 
 const IndexPage = () => {
+  let data = processRaw();
+  console.log(data)
   const classes = useStyles();
   return (
     <Layout>
