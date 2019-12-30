@@ -38,7 +38,7 @@ const IndexPage = () => {
           </Grid>
           <Grid item xs={3}>
             <Paper className={classes.paper}>
-              <SummaryStats data={separatedDates} />
+              {separatedDates ? <SummaryStats data={separatedDates} /> : <p>Loading...</p>}
             </Paper>
           </Grid>
         </Grid>
