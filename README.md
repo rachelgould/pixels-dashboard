@@ -11,5 +11,6 @@ This project is for those who use the Pixels app to track their mood, and want t
 
 # Next Up
 
-- Modules for processing `raw.json`
+- More charts
+- Support for multiple years of data
 
