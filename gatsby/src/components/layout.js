@@ -54,9 +54,9 @@ const Layout = ({ children }) => {
         </AppBar>
       </div>
       <main>{children}</main>
-      <footer>
+      {/* <footer>
         <a href="https://rachelgould.dev">Made by Rachel Gould</a>
-      </footer>
+      </footer> */}
     </>
   )
 }
