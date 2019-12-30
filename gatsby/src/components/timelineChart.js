@@ -11,6 +11,7 @@ const options = {
   },
   vAxis: {
     title: 'Mood',
+    viewWindow: { min: 1, max: 5 }
   }
 };
 
