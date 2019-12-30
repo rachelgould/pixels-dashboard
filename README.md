@@ -14,3 +14,7 @@ This project is for those who use the Pixels app to track their mood, and want t
 - More charts
 - Support for multiple years of data
 
+# Screenshots
+
+![screenshot of dashboard](https://i.ibb.co/VT79Ypk/Screen-Shot-2019-12-30-at-3-36-44-PM.png)
+
