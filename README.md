@@ -1,6 +1,6 @@
 # Pixels Mood Tracker Dashboard
 
-This project is for those who use the Pixels app to track their mood, and want to visualize the data.
+This project is for those who use the Pixels app to track their mood, and want to visualize the data. This is a work in progress.
 
 # How It Works
 
